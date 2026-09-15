@@ -1,27 +1,75 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>COLT Preview 公開テスト</title>
-  <style>
-    body { margin: 0; padding: 24px; color: #172033; background: #f4f7fb; font-family: sans-serif; }
-    main { max-width: 720px; margin: auto; padding: 24px; background: white; border-radius: 16px; }
-    h1 { font-size: 1.8rem; overflow-wrap: anywhere; }
-    p { line-height: 1.8; }
-    a { color: #174db3; }
-    section { margin-top: 32px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COLT 非同期公開の最終確認</title>
+<style>
+* { box-sizing: border-box; }
+html { background: #edf4fa; }
+body { margin: 0; color: #203e59; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif; line-height: 1.9; overflow-wrap: anywhere; }
+.page { width: min(100%, 1120px); margin: 0 auto; padding: 0 clamp(22px, 6vw, 72px); }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; padding: 30px 0; border-bottom: 1px solid #d4e2ee; }
+.brand { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
+.wordmark { font-size: 22px; font-weight: 700; letter-spacing: .13em; }
+.page-title { font-size: 13px; color: #526c83; }
+a { color: #375e80; text-decoration: none; font-size: 13px; border-bottom: 1px solid #a6bed2; padding-bottom: 3px; }
+a:hover { color: #153d65; border-color: #153d65; }
+a:focus-visible { outline: 2px solid #285c94; outline-offset: 6px; }
+main { padding: clamp(48px, 8vw, 92px) 0 48px; }
+.eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 22px; font-size: 12px; letter-spacing: .12em; color: #58728b; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: #487baa; flex-shrink: 0; }
+h1 { margin: 0; max-width: 860px; font-size: clamp(30px, 4.8vw, 48px); font-weight: 700; line-height: 1.65; letter-spacing: .035em; }
+.intro { margin: 24px 0 0; color: #5c7286; font-size: 14px; }
+.card { margin-top: clamp(34px, 5vw, 52px); padding: clamp(26px, 5vw, 52px); border-radius: 24px; background: #24558a; color: #fff; box-shadow: 0 18px 40px #214e7612; }
+.card-label { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; color: #c5daed; font-size: 11px; letter-spacing: .15em; }
+.card-label span { display: block; width: 32px; height: 1px; background: #8eafd0; }
+h2 { margin: 0; font-size: clamp(21px, 3vw, 28px); font-weight: 600; line-height: 1.65; letter-spacing: .035em; }
+.description { margin: 18px 0 0; max-width: 640px; color: #e4eef8; font-size: 15px; line-height: 2; }
+.card-bottom { display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: 34px; padding-top: 23px; border-top: 1px solid #5178a0; color: #d5e4f2; font-size: 12px; }
+.card-bottom p { margin: 0; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 26px 48px; padding: 32px 4px 12px; }
+.note { min-width: 0; }
+h3 { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: #345572; }
+.note p { margin: 0; font-size: 12px; color: #647a8d; line-height: 1.95; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding: 22px 0 30px; border-top: 1px solid #d4e2ee; color: #71869a; font-size: 11px; letter-spacing: .04em; }
+footer p { margin: 0; }
+</style>
 </head>
 <body>
-  <main>
-    <h1>COLT Preview 公開テスト</h1>
-    <p id="preview-ready">これは公開用のダミーページです。業務資料や個人情報は含まれていません。</p>
-    <a href="#verification">表示確認へ</a>
-    <section id="verification">
-      <h2>表示確認</h2>
-      <p>パソコンとスマートフォンで、本文とページ内リンクを確認します。</p>
-    </section>
-  </main>
+<div class="page" id="preview-ready">
+<header>
+<div class="brand"><span class="wordmark">COLT</span><span class="page-title">非同期公開の最終確認</span></div>
+<nav><a href="#verification">確認内容へ <span>↓</span></a></nav>
+</header>
+<main>
+<p class="eyebrow"><span class="dot"></span>公開手順の確認用デザイン</p>
+<h1>確認したデザインを、<br>待ち時間があっても確実に。</h1>
+<p class="intro">プレビューから公開までの手順を、落ち着いて確認するために。</p>
+<section class="card" id="verification">
+<div class="card-label"><span></span>検証用ページ</div>
+<h2>業務情報を含まない検証用デザイン</h2>
+<p class="description">このページは、プレビューで確認した内容を指定URLへ公開する手順の確認用です。</p>
+<div class="card-bottom">
+<p>実データ・個人情報は使用しません</p>
+<p>このページから公開・承認は行いません</p>
+</div>
+</section>
+<section class="notes">
+<article class="note">
+<h3>掲載する情報について</h3>
+<p>会社・顧客の実データ、連絡先、メールアドレス、写真、個人情報は使用していません。</p>
+</article>
+<article class="note">
+<h3>公開操作について</h3>
+<p>公開操作は既存の本人用レビュー画面で行います。このページに公開・承認のボタンはありません。</p>
+</article>
+</section>
+</main>
+<footer>
+<p>COLT 非同期公開の最終確認</p>
+<p>業務情報を含まない、手順確認のためのページ</p>
+</footer>
+</div>
 </body>
 </html>
